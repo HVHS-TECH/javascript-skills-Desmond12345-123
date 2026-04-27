@@ -17,7 +17,7 @@ var isStudent = true
 console.log("My name is "+ name + " and I am " + age + " years old. Am I a student? " + isStudent)
 console.log("You were born in " + (2026 - age))
 console.log("In 20 years, you will be " + (age + 20)
-var money = 100
+var money = 100;
 console.log("You have $" + money)
 console.log("Half your money you have $" + money/2)
 console.log("If you get $3 than you will have $" + (money + 3))
