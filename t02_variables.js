@@ -14,3 +14,4 @@ var age = 15
 console.log(age)
 
 var isStudent = true
+console.log("My name is "+ name + " and I am " + age + " years old. Am I a student? " + isStudent)
