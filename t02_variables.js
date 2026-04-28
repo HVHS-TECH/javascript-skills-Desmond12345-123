@@ -4,14 +4,14 @@ Put your header comment here!
 ****************************/
 console.log("Running t01_introduction.js")
 console.log("Hello, World!")
+//Variables
+let name = "Desmond";
+let age = 15;
+let isStudent = true;
 
 // This is a single line comment
 
-var name = "Desmond"
-console.log(name)
 
-var age = 15
-console.log(age)
-
-var isStudent = true
-console.log("My name is "+ name + " and I am " + age + " years old. Am I a student? " + isStudent)
+console.log(name);
+console.log(age);
+console.log("My name is "+ name + " and I am " + age + " years old. Am I a student? " + isStudent);
