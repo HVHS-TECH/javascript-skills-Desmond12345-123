@@ -1,5 +1,5 @@
-console.log("Task 4 - Debugging")
-
+console.log("Task 4 - Debugging");
+/*****
 // calculate the area
 var area = length * width;
 
@@ -21,3 +21,4 @@ if (perimeter < area){
 else{
     console.log("Hmm, your perimeter is larger. It shouldn't be for this example")
 }
+****/
