@@ -1,5 +1,5 @@
 console.log("Task 4 - Debugging");
-/*****
+
 // calculate the area
 var area = length * width;
 
