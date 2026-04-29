@@ -31,8 +31,8 @@ function welcome(name) {
 welcome(name);
 
 
-function displaceProduct(product, price) {
-    replace.innerHTML = "<p>Welcome to the shop</p>" + name + "<p>We have " + product + " for $" + price + "</p>"
+function displaceProduct(_product, _price) {
+    replace.innerHTML = "<p>Welcome to the shop</p>" + name + "<p>We have " + _product + " for $" + _price + "</p>"
 }
 
 displaceProduct("Chocolate Bar", 4);
