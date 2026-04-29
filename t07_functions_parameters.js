@@ -1,5 +1,8 @@
 const replace = document.getElementById("spaceForJavaScriptOutput")
+const displayProduct = document.getElementById("spaceForJavaScriptOutput")
 replace.innerHTML = "This is the output of JavaScript code. You can replace this text with your own output by using JavaScript to change the innerHTML of this element."
+
+
 console.log("Running t01_introduction.js")
 console.log("Hello, World!")
 
@@ -27,10 +30,10 @@ function welcome(name) {
 welcome(name);
 
 
-function displaceProduct(_product, _price) {
-    replace.innerHTML = "<p>Welcome to the shop</p>" + name + "<p> " + _product + ": $" + _price + "</p>"
+function displayProductInfo(_product, _price) {
+    displayProduct.innerHTML += "<p> " + _product + ": $" + _price + "</p>"
 }
 
-displaceProduct("Chocolate Bar", 4);
-displaceProduct("Chips", 3);
-displaceProduct("Drink", 2.50);
+displayProductInfo("Chocolate Bar", 4);
+displayProductInfo("Chips", 3);
+displayProductInfo("Drink", 2.50);
