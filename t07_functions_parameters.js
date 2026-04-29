@@ -28,7 +28,7 @@ welcome(name);
 
 
 function displaceProduct(_product, _price) {
-    replace.innerHTML = "<p>Welcome to the shop</p>" + name + "<p> " + _product + " for $" + _price + "</p>"
+    replace.innerHTML = "<p>Welcome to the shop</p>" + name + "<p> " + _product + ": $" + _price + "</p>"
 }
 
 displaceProduct("Chocolate Bar", 4);
