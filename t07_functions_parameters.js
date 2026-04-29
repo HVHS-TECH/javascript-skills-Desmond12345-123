@@ -1,7 +1,3 @@
-/****************************
-This is a block comment.
-Put your header comment here!
-****************************/
 const replace = document.getElementById("spaceForJavaScriptOutput")
 replace.innerHTML = "This is the output of JavaScript code. You can replace this text with your own output by using JavaScript to change the innerHTML of this element."
 console.log("Running t01_introduction.js")
