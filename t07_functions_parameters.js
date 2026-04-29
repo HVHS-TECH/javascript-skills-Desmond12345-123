@@ -35,6 +35,6 @@ function displaceProduct(product, price) {
     replace.innerHTML = "<p>Welcome to the shop</p>" + name + "<p>We have " + product + " for $" + price + "</p>"
 }
 
-displaceProduct("Chocolate Bar", 4)
-displaceProduct("Chips", 3)
-displaceProduct("Drink", 2.50)
+displaceProduct("Chocolate Bar", 4);
+displaceProduct("Chips", 3);
+displaceProduct("Drink", 2.50);
