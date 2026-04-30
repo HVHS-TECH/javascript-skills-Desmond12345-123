@@ -35,6 +35,5 @@ welcome(name);
 
 
 function start() {
-    spaceForJavaScriptOutput.innerHTML
-    answer
+    replace.innerHTML += "<p>Button was clicked!</p>"
 }
