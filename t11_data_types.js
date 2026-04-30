@@ -44,4 +44,4 @@ function getFormInput() {
     const nameField = document.getElementById("nameField");
     userName = nameField.value;
     replace.innerHTML += "<p>Hello, " + userName + "!</p>"
-}   
+}       
