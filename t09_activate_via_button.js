@@ -35,5 +35,6 @@ welcome(name);
 
 
 function start() {
-    spaceForJavaScriptOutput.inner
+    spaceForJavaScriptOutput.innerHTML
+    answer
 }
