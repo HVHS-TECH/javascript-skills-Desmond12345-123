@@ -45,3 +45,21 @@ function getFormInput() {
     userName = nameField.value;
     replace.innerHTML += "<p>Hello, " + userName + "!</p>"
 }       
+
+function getName () {
+    const nameField = document.getElementById("nameField");
+    userName = nameField.value;
+    replace.innerHTML += "<p>Hello, " + userName + "!</p>"
+}
+
+function getAge () {
+    const ageField = document.getElementById("ageField");
+    userAge = ageField.value;
+    replace.innerHTML += "<p>You are " + userAge + " years old.</p>"
+}
+
+function userPocketmoney () {
+    const pocketmoneyField = document.getElementById("pocketmoneyField");
+    userPocketmoney = pocketmoneyField.value;
+    replace.innerHTML += "<p>You have $" + userPocketmoney + " in your pocket.</p>"
+}
