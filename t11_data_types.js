@@ -2,8 +2,8 @@
 This is a block comment.
 Put your header comment here!
 ****************************/
-const replace = document.getElementById("spaceForJavaScriptOutput")
-replace.innerHTML = "This is the output of JavaScript code. You can replace this text with your own output by using JavaScript to change the innerHTML of this element."
+const output = document.getElementById("spaceForJavaScriptOutput")
+output.innerHTML = "This is the output of JavaScript code. You can replace this text with your own output by using JavaScript to change the innerHTML of this element."
 console.log("Running t01_introduction.js")
 console.log("Hello, World!")
 
@@ -25,7 +25,7 @@ console.log("Half your money you have $" + num1/2)
 console.log("If you get $3 than you will have $" + (num1 + 3))
 
 function welcome(name) {
-    replace.innerHTML = "<p>Welcome to the shop</p>" + name
+    output.innerHTML = "<p>Welcome to the shop</p>" + name
 }
 
 welcome(name);
@@ -35,7 +35,7 @@ welcome(name);
 
 
 function start() {
-    replace.innerHTML += "<p>Button was clicked!</p>"
+    output.innerHTML += "<p>Button was clicked!</p>"
 }
 
 let userName = nameField.value;
@@ -43,23 +43,23 @@ let userName = nameField.value;
 function getFormInput() {
     const nameField = document.getElementById("nameField");
     userName = nameField.value;
-    replace.innerHTML += "<p>Hello, " + userName + "!</p>"
+    output.innerHTML += "<p>Hello, " + userName + "!</p>"
 }       
 
 function getName () {
     const nameField = document.getElementById("nameField");
     userName = nameField.value;
-    replace.innerHTML += "<p>Hello, " + userName + "!</p>"
+    output.innerHTML += "<p>Hello, " + userName + "!</p>"
 }
 
 function getAge () {
     const ageField = document.getElementById("ageField");
     userAge = ageField.value;
-    replace.innerHTML += "<p>You are " + userAge + " years old.</p>"
+    output.innerHTML += "<p>You are " + userAge + " years old.</p>"
 }
 
 function userPocketmoney () {
     const pocketmoneyField = document.getElementById("pocketmoneyField");
     userPocketmoney = pocketmoneyField.value;
-    replace.innerHTML += "<p>You have $" + userPocketmoney + " in your pocket.</p>"
+    output.innerHTML += "<p>You have $" + userPocketmoney + " in your pocket.</p>"
 }
