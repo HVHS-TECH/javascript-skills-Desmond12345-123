@@ -62,3 +62,7 @@ function userPocketmoney () {
     userPocketmoney = pocketmoneyField.value;
     output.innerHTML += "<p>You have $" + userPocketmoney + " in your pocket.</p>"
 }
+
+userPocketmoney()
+getAge()
+getName()
