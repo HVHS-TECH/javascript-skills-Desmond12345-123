@@ -45,11 +45,6 @@ function getFormInput() {
     output.innerHTML += "<p>Hello, " + userName + "!</p>"
 }       
 
-function getName () {
-    const nameField = document.getElementById("nameField");
-    userName = nameField.value;
-    output.innerHTML += "<p>Hello, " + userName + "!</p>"
-}
 
 function getAge () {
     const ageField = document.getElementById("ageField");
@@ -64,5 +59,4 @@ function userPocketmoney () {
 }
 
 userPocketmoney()
-getAge()
 getName()
