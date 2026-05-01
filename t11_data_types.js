@@ -38,7 +38,6 @@ function start() {
     output.innerHTML += "<p>Button was clicked!</p>"
 }
 
-let userName = nameField.value;
 
 function getFormInput() {
     const nameField = document.getElementById("nameField");
