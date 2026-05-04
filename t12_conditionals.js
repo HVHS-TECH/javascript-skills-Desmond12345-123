@@ -56,6 +56,11 @@ function getUserPocketMoney () {
     const pocketMoneyField = document.getElementById("pocketMoneyField");
     userPocketMoney = pocketMoneyField.value;
     output.innerHTML += "<p>You have $" + userPocketMoney + " in your pocket.</p>"
+    if (userPocketMoney >= 4) {
+        output.innerHTML += "<p>You CAN afford a chocolate bar!</p>"
+    } else {
+        output.innerHTML += "<p>You CANNOT afford a chocolate bar!</p>"
+    }
 }
 getFormInput()
 getUserPocketMoney()
