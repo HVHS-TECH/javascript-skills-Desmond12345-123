@@ -9,17 +9,17 @@ console.log("Hello, World!")
 
 // This is a single line comment
 
-var name = "Desmond";
+let name = "Desmond";
 console.log(name)
 
-var age = 15;
+let age = 15;
 console.log(age)
 
-var isStudent = true
+let isStudent = true
 console.log("My name is "+ name + " and I am " + age + " years old. Am I a student? " + isStudent)
 console.log("You were born in " + (2026 - age))
 console.log("In 20 years, you will be " + (age + 20))
-var num1 = 100;
+let num1 = 100;
 console.log("You have $" + num1)
 console.log("Half your money you have $" + num1/2)
 console.log("If you get $3 than you will have $" + (num1 + 3))
@@ -49,7 +49,7 @@ function getFormInput() {
 function getAge () {
     const ageField = document.getElementById("ageField");
     userAge = ageField.value;
-    output.innerHTML += "<p>You are " + userAge + " years old.</p>"
+    output.innerHTML += "<p>You are t" + userAge + " years old.</p>"
 }
 
 
@@ -65,10 +65,8 @@ function getUserPocketMoney () {
 }
 
 
-var chocolateBarPrice = 4;
+let chocolateBarPrice = 4;
 function caclulateChange(userPocketmoney, chocolateBarPrice){
-    var change = (userPocketmoney - chocolateBarPrice);
-    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
 }
 
 
