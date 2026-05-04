@@ -64,11 +64,10 @@ function getUserPocketMoney () {
     event.preventDefault();
 }
 
-function caclulateChange(_money, _price){
-    var change = (_money - _price);
-    console.log("Your change is $" + change);
-    output.innerHTML += "<p>Your change is $" + change + "</p>";
-    return change;
+chocolateBarPrice = 4;
+function caclulateChange(userPocketmoney, chocolateBarPrice){
+    var change = (userPocketmoney - chocolateBarPrice);
+    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
 }
 
 getFormInput()
