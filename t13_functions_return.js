@@ -68,10 +68,11 @@ function getUserPocketMoney () {
 
 let chocolateBarPrice = 4;
 function caclulateChange(userPocketMoney, chocolateBarPrice){
-    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + (userPocketMoney - chocolateBarPrice) + "</p>";
+    let change = (userPocketMoney - chocolateBarPrice);
+    output.innerHTML += "<p>hello</p>";
+    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
 }
 
-caclulateChange(userPocketMoney, chocolateBarPrice);
 getFormInput();
 getUserPocketMoney();
 getAge();
