@@ -53,7 +53,7 @@ function getAge () {
 }
 
 
-chocolateBarPrice = 4;
+var chocolateBarPrice = 4;
 function caclulateChange(userPocketmoney, chocolateBarPrice){
     var change = (userPocketmoney - chocolateBarPrice);
     output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
