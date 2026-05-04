@@ -52,6 +52,13 @@ function getAge () {
     output.innerHTML += "<p>You are " + userAge + " years old.</p>"
 }
 
+
+chocolateBarPrice = 4;
+function caclulateChange(userPocketmoney, chocolateBarPrice){
+    var change = (userPocketmoney - chocolateBarPrice);
+    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
+}
+
 function getUserPocketMoney () {
     const pocketMoneyField = document.getElementById("pocketMoneyField");
     userPocketMoney = pocketMoneyField.value;
@@ -61,13 +68,6 @@ function getUserPocketMoney () {
     } else {
         output.innerHTML += "<p>You CANNOT afford a chocolate bar!</p>"
     }
-    event.preventDefault();
-}
-
-chocolateBarPrice = 4;
-function caclulateChange(userPocketmoney, chocolateBarPrice){
-    var change = (userPocketmoney - chocolateBarPrice);
-    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
 }
 
 getFormInput()
