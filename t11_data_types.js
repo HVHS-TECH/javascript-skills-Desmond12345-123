@@ -52,12 +52,11 @@ function getAge () {
     output.innerHTML += "<p>You are " + userAge + " years old.</p>"
 }
 
-function userPocketMoney () {
-    console.log("Hello, World!")
+function getUserPocketMoney () {
     const pocketMoneyField = document.getElementById("pocketMoneyField");
     userPocketMoney = pocketMoneyField.value;
     output.innerHTML += "<p>You have $" + userPocketMoney + " in your pocket.</p>"
 }
 getFormInput()
-userPocketMoney()
+getUserPocketMoney()
 getAge()
