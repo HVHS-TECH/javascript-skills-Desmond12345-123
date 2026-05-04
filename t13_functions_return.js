@@ -62,16 +62,16 @@ function getUserPocketMoney () {
     } else {
         output.innerHTML += "<p>You CANNOT afford a chocolate bar!</p>"
     }
-    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + (userPocketmoney - chocolateBarPrice) + "</p>";
-
 }
 
-/*
+
+
 let chocolateBarPrice = 4;
 function caclulateChange(userPocketmoney, chocolateBarPrice){
+    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + (userPocketmoney - chocolateBarPrice) + "</p>";
 }
 
-*/
-getFormInput()
-getUserPocketMoney()
-getAge()
+caclulateChange(userPocketMoney, chocolateBarPrice);
+getFormInput();
+getUserPocketMoney();
+getAge();
