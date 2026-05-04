@@ -61,6 +61,7 @@ function getUserPocketMoney () {
     } else {
         output.innerHTML += "<p>You CANNOT afford a chocolate bar!</p>"
     }
+    event.preventDefault();
 }
 getFormInput()
 getUserPocketMoney()
