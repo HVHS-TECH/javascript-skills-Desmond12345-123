@@ -53,6 +53,7 @@ function getAge () {
 }
 
 function userPocketMoney () {
+    console.log("Hello, World!")
     const pocketMoneyField = document.getElementById("pocketMoneyField");
     userPocketMoney = pocketMoneyField.value;
     output.innerHTML += "<p>You have $" + userPocketMoney + " in your pocket.</p>"
