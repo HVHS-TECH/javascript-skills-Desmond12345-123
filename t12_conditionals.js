@@ -63,7 +63,16 @@ function getUserPocketMoney () {
     }
     event.preventDefault();
 }
+function calculateChange(userPocketMoney, chocolateBarPrice){
+
+    let chocolateBarPrice = 4;
+    let change = (userPocketMoney - chocolateBarPrice);
+    <p>hello</p>
+    output.innerHTML += "<p>hello</p>";
+    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
+}
 
 getFormInput()
 getUserPocketMoney()
 getAge()
+calculateChange(userPocketMoney, chocolateBarPrice)
