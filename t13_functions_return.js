@@ -67,6 +67,7 @@ function getUserPocketMoney () {
 
 
 function caclulateChange(userPocketMoney, chocolateBarPrice){
+
     let chocolateBarPrice = 4;
     let change = (userPocketMoney - chocolateBarPrice);
     output.innerHTML += "<p>hello</p>";
