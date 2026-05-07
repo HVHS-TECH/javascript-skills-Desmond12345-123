@@ -63,6 +63,7 @@ function getUserPocketMoney () {
     }
     event.preventDefault();
 }
+
 getFormInput()
 getUserPocketMoney()
 getAge()
