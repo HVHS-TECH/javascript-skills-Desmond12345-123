@@ -55,7 +55,7 @@ function getAge () {
 function getUserPocketMoney () {
     const pocketMoneyField = document.getElementById("pocketMoneyField");
     userPocketMoney = pocketMoneyField.value;
-    output.innerHTML += "<p>You have $" + (userPocketMoney - 4) + " in your pocket.</p>"
+    output.innerHTML += "<p>You have $" + userPocketMoney + " in your pocket.</p>"
     if (userPocketMoney >= 4) {
         output.innerHTML += "<p>You CAN afford a chocolate bar!</p>"
     } else {
@@ -67,7 +67,7 @@ function getUserPocketMoney () {
 function givenChange() {
     const changeField = document.getElementById("changeField");
     userChange = changeField.value;
-    output.innerHTML += "<p>You have $" + userChange + " in change.</p>"
+    output.innerHTML += "<p> If you buy a choclate. You have $" + (userChange - 4) + " in change.</p>"
     if (userChange >= 4) {
         output.innerHTML += "<p>You CAN afford a chocolate bar!</p>"
     } else {

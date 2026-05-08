@@ -35,9 +35,13 @@
     <label for="pocketMoneyField">Enter your pocket money:</label>
     <input type = "text" id="pocketMoneyField" name="userPocketMoney" >
     <input type = "submit" onClick="getUserPocketMoney()">
-    <input type = "button" value="Calculate Change" onClick="caclulateChange()">
   </form>
-  
+  <form onsubmit="return false">
+    <label for="changeField">Enter your change:</label>
+    <input type = "text" id="changeField" name="userChange" >
+    <input type = "submit" onClick="givenChange()">
+  </form>
+    
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
