@@ -63,16 +63,19 @@ function getUserPocketMoney () {
     }
     event.preventDefault();
 }
-function calculateChange(userPocketMoney, chocolateBarPrice){
 
-    let chocolateBarPrice = 4;
-    let change = (userPocketMoney - chocolateBarPrice);
-    <p>hello</p>
-    output.innerHTML += "<p>hello</p>";
-    output.innerHTML += "<p>If you buy the chocolate bar, your change is $" + change + "</p>";
+function givenChange() {
+    const changeField = document.getElementById("changeField");
+    userChange = changeField.value;
+    output.innerHTML += "<p>You have $" + userChange + " in change.</p>"
+    if (userChange >= 4) {
+        output.innerHTML += "<p>You CAN afford a chocolate bar!</p>"
+    } else {
+        output.innerHTML += "<p>You CANNOT afford a chocolate bar!</p>"
+    }
+    event.preventDefault();
 }
 
 getFormInput()
 getUserPocketMoney()
 getAge()
-calculateChange(userPocketMoney, chocolateBarPrice)
