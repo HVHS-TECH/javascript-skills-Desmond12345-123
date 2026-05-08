@@ -36,8 +36,10 @@
     <input type = "text" id="pocketMoneyField" name="userPocketMoney" >
     <input type = "submit" onClick="getUserPocketMoney()">
   </form>
-  <form onsubmit="return false"></form>
-    <input type = "submit" onClick="caclulateChange()">
+  <form onsubmit="return false">
+    <label for="changeField">Enter your change:</label>
+    <input type = "text" id="changeField" name="userChange" >
+    <input type = "submit" onClick="givenChange()">
   </form>
   
   <div id="spaceForJavaScriptOutput">
