@@ -75,7 +75,13 @@ function givenChange() {
     }
     event.preventDefault();
 }
-let chocolate
+function chocolateOpinion() {
+    const chocolateOpinionField = document.getElementById("chocolateOpinionField");
+    let chocolateLike = ["You loathe chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best!"]
+    output.innerHTML += "<p>" + chocolateLike[chocolateOpinionField.value] + "</p>"
+    output.innerHTML += "<p>How much do you like chocolate out of 0-3?</p>" 
+
+}
 
 getFormInput()
 getUserPocketMoney()
