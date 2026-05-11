@@ -75,6 +75,7 @@ function givenChange() {
     }
     event.preventDefault();
 }
+let chocolate
 
 getFormInput()
 getUserPocketMoney()
