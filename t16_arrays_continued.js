@@ -87,6 +87,8 @@ function shopping() {
     const shoppingField = document.getElementById("shoppingField");
 }
 
+
+
 getFormInput()
 getUserPocketMoney()
 getAge()
