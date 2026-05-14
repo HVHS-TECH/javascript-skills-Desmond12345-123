@@ -83,11 +83,34 @@ function chocolateOpinion() {
 
 }
 
-function shopping() {
+let shoppingList = [];
+
+function addShoppingItem() {
     const shoppingField = document.getElementById("shoppingField");
+    const item = shoppingField.value.trim();
+
+    if (item === "") {
+        output.innerHTML += "<p>Please enter an item before adding it to the list.</p>";
+        return;
+    }
+
+    shoppingList.push(item);
+    output.innerHTML += "<p>You have added " + item + " to the list</p>";
+    shoppingField.value = "";
 }
 
+function displayShoppingList() {
+    if (shoppingList.length === 0) {
+        output.innerHTML += "<p>Your shopping list is empty.</p>";
+        return;
+    }
 
+    let listHtml = "<p>These are the items on your shopping list:</p>";
+    shoppingList.forEach(function(item) {
+        listHtml += "<p>" + item + "</p>";
+    });
+    output.innerHTML += listHtml;
+}
 
 getFormInput()
 getUserPocketMoney()
