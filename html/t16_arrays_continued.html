@@ -54,6 +54,12 @@
     <input type="button" id="showListButton" value="Show list" onClick="displayShoppingList()">
   </form>
     
+<form onsubmit="return false;">
+  <label for="shoppingField">Add an item to your shopping list:</label>
+  <input type="text" id="shoppingField" name="shoppingField" placeholder="Enter item">
+  <input type="submit" id="addItemButton" value="Add item" onClick="addShoppingItem()">
+  <input type="button" id="showListButton" value="Show list" onClick="displayShoppingList()">
+</form>
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
