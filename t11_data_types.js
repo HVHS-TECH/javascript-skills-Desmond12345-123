@@ -1,62 +1,81 @@
-/****************************
-This is a block comment.
-Put your header comment here!
-****************************/
-const output = document.getElementById("spaceForJavaScriptOutput")
-output.innerHTML = "This is the output of JavaScript code. You can replace this text with your own output by using JavaScript to change the innerHTML of this element."
-console.log("Running t01_introduction.js")
-console.log("Hello, World!")
+const replace=document.getElementById("spaceForJavaScriptOutput")
 
-// This is a single line comment
+const names="desmond";
+const year=2026;
+const age=67;
+const bday=2026-67;
+const future=67+10;
+const money=3;
+const balance=3/2;
+const balanceagain=balance+3;
 
-var name = "Desmond";
-console.log(name)
+console.log("hi "+names);
+console.log("As of "+year+" you are "+age+" years old");
+console.log("you were born in "+bday);
+console.log("In 10 years you will be "+future+" Years old");
+console.log("You have "+money+"dollars");
+console.log("You spend half of your money,now you have "+balance);
+console.log("Then you get $3, now you have"+balanceagain);
 
-var age = 15;
-console.log(age)
-
-var isStudent = true
-console.log("My name is "+ name + " and I am " + age + " years old. Am I a student? " + isStudent)
-console.log("You were born in " + (2026 - age))
-console.log("In 20 years, you will be " + (age + 20))
-var num1 = 100;
-console.log("You have $" + num1)
-console.log("Half your money you have $" + num1/2)
-console.log("If you get $3 than you will have $" + (num1 + 3))
-
-function welcome(name) {
-    output.innerHTML = "<p>Welcome to the shop</p>" + name
+function hola(){
+    replace.innerHTML +="<p>Welocme to shop ig</p>"+names
+}
+function displayProduct(_name,_price){
+    replace.innerHTML +=_name+_price+"<br>"
 }
 
-welcome(name);
+function start(){
+    replace.innerHTML +="<p>Button is working i guess dude</p>"
+}
+let dataOnly = [];
 
+function getFormInput(event){
+    event.preventDefault();
 
+    var NAME_FIELD = document.getElementById("nameFeild");
+    let userName = NAME_FIELD.value;
 
+    if(userName.length < 3){
+        replace.innerHTML += "<p>Not acceptable pls try more than 3 letters</p>";
+        return;
+    }
 
+    dataOnly.push(userName);
 
-function start() {
-    output.innerHTML += "<p>Button was clicked!</p>"
+    replace.innerHTML += "<p>hola " + dataOnly + "</p>";
 }
 
-
-function getFormInput() {
-    const nameField = document.getElementById("nameField");
-    userName = nameField.value;
-    output.innerHTML += "<p>Hello, " + userName + "!</p>"
-}       
-
-
-function getAge () {
-    const ageField = document.getElementById("ageField");
-    userAge = ageField.value;
-    output.innerHTML += "<p>You are " + userAge + " years old.</p>"
+function getFormInput2(event){
+    event.preventDefault();
+    const NAME_FIELD = document.getElementById("usersAge");
+    let userAge = NAME_FIELD.value;
+    replace.innerHTML += "<p>Your age is " + userAge + "</p>";
 }
 
-function getUserPocketMoney () {
-    const pocketMoneyField = document.getElementById("pocketMoneyField");
-    userPocketMoney = pocketMoneyField.value;
-    output.innerHTML += "<p>You have $" + userPocketMoney + " in your pocket.</p>"
+function getFormInput3(event, price){
+    event.preventDefault();
+    const NAME_FIELD = document.getElementById("pocketMoney");
+    let userMoney = Number(NAME_FIELD.value);
+
+    replace.innerHTML += "<p>You have $" + userMoney + "</p>";
+
+    if (userMoney < price){
+        replace.innerHTML += "<p>Sorry, you are too broke </p>";
+    } else {
+        let change = userMoney - price;
+        replace.innerHTML += "<p>You can buy it! Change: $" + change + "</p>";
+    }
 }
-getFormInput()
-getUserPocketMoney()
-getAge()
+
+function getFormInput4(event){
+    event.preventDefault()
+    const NAME_FIELD = document.getElementById("chocolate");
+    let choice=Number(NAME_FIELD.value);
+    if (choice < 0 || choice > 3 || isNaN(choice)){
+    replace.innerHTML += "nah u ain't smart<br>";
+    return;
+    }
+    let classArray=["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
+    replace.innerHTML += "you think:"+classArray[choice]+"<br>";
+}
+    
