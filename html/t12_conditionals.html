@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>T10-input from HTML</title>
+  <title>T13-data types</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,32 +16,47 @@
 **************************************************************-->
 
 <body>
-  <h1>T10-input from HTML</h1>
+  <h1>T11-data types</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-  <form onsubmit="return false;">
-    <label for="nameField">Enter your name:</label>
-    <input type = "text" id="nameField" name="formName" value="Name">
-    <input type = "submit" onClick="getFormInput()">
-  </form>
-  <form onsubmit="return false">
-    <label for="ageField">Enter your age:</label>
-    <input type = "text" id="ageField" name="formAge" value="Age">
-    <input type = "submit" onClick="getAge()">
-  </form> 
 
-  <form onsubmit="return false">
-    <label for="pocketMoneyField">Enter your pocket money:</label>
-    <input type = "text" id="pocketMoneyField" name="userPocketMoney" >
-    <input type = "submit" onClick="getUserPocketMoney()">
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="text" id="nameFeild" name="formName">
+    <input type="submit" onClick="getFormInput(event)">
   </form>
-  <form onsubmit="return false">
-    <label for="changeField">Enter your change:</label>
-    <input type = "text" id="changeField" name="userChange" >
-    <input type = "submit" onClick="givenChange()">
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="text" id="usersAge" name="formName">
+    <input type="submit" onClick="getFormInput2(event)">
   </form>
-    
+  <form>
+    <lable for="formName">PocketMoney:</lable>
+    <input type="number" id="pocketMoney" name="formName">
+    <input type="submit" onClick="getFormInput3(event,4)">
+  </form>
+  <form>
+    <lable for="formName">Age:</lable>
+    <input type="number" id="usersAge" name="formName">
+    <input type="submit" onClick="getFormInput2(event)">
+  </form>
+  <h1>Shopping list gang</h1>
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="text" id="shopping" name="formName">
+    <input type="submit" onClick="getFormInput6(event)">
+  </form>
+  <form>
+    <lable for="formName">How  much u like choclate 0-3</lable>
+    <input type="number" id="chocolate" name="formName">
+    <input type="submit" onClick="getFormInput4(event)">
+  </form>
+  <button id="button1" onClick="getFormInput5(event)">click</button>
+  <button onClick="clearFields()">Clear</button>
+
+
+
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
@@ -49,11 +64,9 @@
   </div>
 
 
-  <script src="../t12_conditionals.js"></script>
+  <script src="../t11_data_types.js"></script>
 
 </body>
 
 </html>
-<!--*************************************************************
-  END OF T12_CONDITIONALS.HTML
-**************************************************************-->
+
