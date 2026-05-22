@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>T10-input from HTML</title>
+  <title>T13-data types</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,43 +16,46 @@
 **************************************************************-->
 
 <body>
-  <h1>T10-input from HTML</h1>  
+  <h1>T11-data types</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-  <form onsubmit="return false;">
-    <label for="nameField">Enter your name:</label>
-    <input type = "text" id="nameField" name="formName" value="Name">
-    <input type = "submit" onClick="getFormInput()">
-  </form>
-  <form onsubmit="return false">
-    <label for="ageField">Enter your age:</label>
-    <input type = "text" id="ageField" name="formAge" value="Age">
-    <input type = "submit" onClick="getAge()" input type="number">
-  </form> 
 
-  <form onsubmit="return false">
-    <label for="pocketMoneyField">Enter your pocket money:</label>
-    <input type = "text" id="pocketMoneyField" name="userPocketMoney" >
-    <input type = "submit" onClick="getUserPocketMoney()">
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="text" id="nameFeild" name="formName">
+    <input type="submit" onClick="getFormInput(event)">
   </form>
-  <form onsubmit="return false">
-    <label for="changeField">Enter your change:</label>
-    <input type = "text" id="changeField" name="userChange" >
-    <input type = "submit" onClick="givenChange()">
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="text" id="usersAge" name="formName">
+    <input type="submit" onClick="getFormInput2(event)">
   </form>
-  <form onsubmit="return false">
-    <label for="chocolateOpinionField">How much do you like chocolate out of 0-3?</label>
-    <input type = "text" id="chocolateOpinionField" name="userChocolateOpinion" >
-    <input type = "submit" onClick="chocolateOpinion()">
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="number" id="pocketMoney" name="formName">
+    <input type="submit" onClick="getFormInput3(event,4)">
   </form>
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="number" id="pocketMoney" name="formName">
+    <input type="submit" onClick="getFormInput3(event,4)">
+  </form>
+  <h1>Shopping list gang</h1>
+  <form>
+    <lable for="formName">Name:</lable>
+    <input type="text" id="shopping" name="formName">
+    <input type="submit" onClick="getFormInput6(event)">
+  </form>
+  <form>
+    <lable for="formName">How  much u like choclate 0-3</lable>
+    <input type="number" id="chocolate" name="formName">
+    <input type="submit" onClick="getFormInput4(event)">
+  </form>
+  <button id="button1" onClick="getFormInput5(event)">click</button>
+  <button onClick="clearFields()">Clear</button>
 
-<form onsubmit="return false;">
-  <label for="shoppingField">Add an item to your shopping list:</label>
-  <input type="text" id="shoppingField" name="shoppingField" placeholder="Enter item">
-  <input type="submit" id="addItemButton" value="Add item" onClick="addShoppingItem()">
-  <input type="button" id="showListButton" value="Show list" onClick="displayShoppingList()">
-</form>
+
 
   <div id="spaceForJavaScriptOutput">
 
@@ -61,11 +64,9 @@
   </div>
 
 
-  <script src="../t16_arrays_continued.js"></script>
+  <script src="../t11_data_types.js"></script>
 
 </body>
 
 </html>
-<!--*************************************************************
-  END OF T16_ARRAYS_CONTINUED.HTML                      
-**************************************************************-->
+
