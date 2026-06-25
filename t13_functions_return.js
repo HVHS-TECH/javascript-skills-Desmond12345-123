@@ -39,7 +39,7 @@ function start() {
 }
 
 
-function getFormInput() {
+function getFormInput() 
     const nameField = document.getElementById("nameField");
     userName = nameField.value;
     output.innerHTML += "<p>Hello, " + userName + "!</p>"
